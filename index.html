@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Thierno Souleymane Barry | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+  </head>
+
+  <body>
+    <div id="cursor"></div>
+    <div class="wrapper">
+      <header id="header">
+        <div class="icon" id="menu-btn">
+          <a href="#navbar">
+            <i class="bi bi-list"></i>
+          </a>
+        </div>
+        <div class="hero" id="hero">
+          <div class="img-container">
+            <img src="./assets/images/SÜLEYMAN.jpg" alt="Barry" />
+          </div>
+        </div>
+
+        <div class="desc">
+          <h1>Hey, I'm <span class="name">Thierno Souleymane BARRY</span>.</h1>
+          <p>A web developer</p>
+        </div>
+      </header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#header" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <section id="about">
+        <h1>About</h1>
+        <div class="container hidden">
+          <div class="img-container">
+            <img
+              src="./assets/images/Thierno Souleymane Barry.jpg"
+              alt="Barry Standing"
+            />
+          </div>
+          <div class="hidden">
+            <h2>A Little About Me</h2>
+            <p>
+              Born and raised in Guinea, West Africa. When I was a boy I used to
+              always imagine myself building web sites and games. But being a
+              little limited regarding the economic situation of my family, I
+              couldn't have my own laptop until the age of 19. <br />
+              So it was at that moment that I started learning basics of computer sciences, web development ...
+            </p>
+            <div class="skills-container">
+              <h3>Languages</h3>
+              <ul class="skillset">
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Frameworks & Environments</h3>
+              <ul class="skillset">
+                <li>Bootstrap</li>
+                <li>d3.js</li>
+                <li>SCSS</li>
+                <li>Git & Github</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="clearfix"></div>
+
+      <section id="work">
+        <h1>Work</h1>
+        <div id="carousel-wrapper" class="hidden">
+          <div id="menu">
+            <div id="current-option">
+              <h2 id="current-option-title">To-do List App</h2>
+              <p id="current-option-text">
+                The homepage of a To-do App.<br />
+                Which contains the tasks of the day, the upcoming tasks and the
+                completed tasks.<br />
+                It also has the option of adding and removing a task.
+              </p>
+            </div>
+            <div class="buttons">
+              <button id="previous-option">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button id="next-option">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div id="image-ctn" class="img-container">
+            <img
+              src="./assets/images/to-do-list.png"
+              alt="To-do list"
+              id="image"
+            />
+          </div>
+          <div class="demo-code" id="demo-code">
+            <button>
+              <a
+                href="https://codepen.io/alfa_soul/full/xxmxJqq"
+                id="demo"
+                target="_blank"
+                >Demo</a
+              >
+            </button>
+            <button>
+              <a href="#" id="code">Code</a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h1>Contacts</h1>
+        <div class="form-container">
+          <form action="#" id="form">
+            <div class="input-area">
+              <label for="name">Name</label>
+              <input type="text" name="Name" id="name" required />
+            </div>
+            <div class="input-area">
+              <label for="phone">Phone</label>
+              <!-- JavaScript ile pattern uygulanacak. -->
+              <input type="tel" name="Phone" id="phone" />
+            </div>
+            <div class="input-area">
+              <label for="email">E-mail</label>
+              <input type="email" name="e-mail" id="email" required />
+            </div>
+            <div class="input-area">
+              <textarea
+                name="message"
+                id="message"
+                rows="3"
+                maxlength="200"
+                wrap="soft"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+      </section>
+      <footer>
+        <div>
+          <p>Designed & coded by Thierno Souleymane BARRY.</p>
+          <span
+            >To see more, visit my
+            <a href="https://codepen.io/alfa_soul" target="_blank" id="codepen"
+              >codepen</a
+            >
+            profile.</span
+          >
+        </div>
+        <ul class="socials">
+          <li>
+            <a href="https://github.com/alfabeta11" target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/thierno-souleymane-barry"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:alfafrontenddev@gmail.com"
+              ><i class="bi bi-envelope"></i
+            ></a>
+          </li>
+          <li>
+            <a href="tel:"><i class="bi bi-telephone-fill"></i></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
